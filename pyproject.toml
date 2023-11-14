@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "test-fastapi-security"
+version = "0.1.0"
+description = ""
+authors = ["codeanish <anish@codeanish.com>"]
+readme = "README.md"
+packages = [{include = "test_fastapi_security"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+pydantic = "^2.5.0"
+python-multipart = "^0.0.6"
+uvicorn = "^0.24.0.post1"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
